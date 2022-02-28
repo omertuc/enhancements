@@ -295,9 +295,9 @@ from having the installer set the `IngressPlacement` to `ControlPlane`.
 
 ### Risks and Mitigations
 
-This should make no noticable difference on "regular" single control-plane node
-clusters which do not have any day-1 or day-2 worker nodes. The only difference
-for those clusters would be the `IngressController` targeting the "master" pool
+This should make no noticable difference on single control-plane node clusters
+which do not have any day-1 or day-2 worker nodes. The only difference for
+those clusters would be the `IngressController` targeting the "master" pool
 rather than the "worker" pool, but since the single control-plane node is
 already both in the "master" and "worker" pools, that should make no practical
 difference.
